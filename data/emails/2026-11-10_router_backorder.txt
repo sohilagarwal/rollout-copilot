@@ -1,0 +1,11 @@
+From: Supply Desk <orders@netdistro.example>
+To: Rollout PMO
+Date: 2026-11-10
+Subject: Backorder - EdgeRouter 4400 (order PO-77812)
+
+The EdgeRouter 4400 units on PO-77812 are backordered. Current estimated
+ship date is 2026-12-04. Affected sites on this PO: S072, S073, S074, S078, S079, S080, S081, S083, S085, S090, S091, S092, S093, S094, S097.
+
+A substitute model (EdgeRouter 4300) is available now if engineering approves it.
+
+Supply Desk, NetDistro

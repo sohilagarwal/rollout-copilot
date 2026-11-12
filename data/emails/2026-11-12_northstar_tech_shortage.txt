@@ -1,0 +1,12 @@
+From: Greg Patel <greg.patel@northstar.example>
+To: Rollout PMO
+Date: 2026-11-12
+Subject: Central region technician capacity
+
+Hi,
+
+Two of our Central region technicians are out through the end of the month.
+We can cover about 8 installs per week instead of 12 in Central until December 1.
+We are also reviewing the recent aborted visits (S002, S005, S017, S038, S047).
+
+Greg Patel, NorthStar Install

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": ["mcp__rollout"]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR\"/server/start.sh --setup-only"
+          }
+        ]
+      }
+    ]
+  }
+}

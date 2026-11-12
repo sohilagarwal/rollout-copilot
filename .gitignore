@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+audit/
+outbox/
+reports/
+evals/results.md

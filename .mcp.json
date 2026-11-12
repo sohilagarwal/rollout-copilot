@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rollout": {
+      "command": "bash",
+      "args": ["${CLAUDE_PROJECT_DIR:-.}/server/start.sh"]
+    }
+  }
+}

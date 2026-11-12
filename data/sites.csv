@@ -1,0 +1,201 @@
+site_id,name,city,state,region,wave,go_live_target,carrier,circuit_ordered,circuit_due,circuit_delivered,circuit_status,hardware_status,hardware_eta,site_ready,install_vendor,technician_date,install_attempts,install_status,last_abort_reason,live_date
+S001,Boise Store #101,Boise,ID,West,1,2026-10-19,Bluewave Telecom,2026-09-04,2026-10-04,2026-10-04,Delivered,Delivered,2026-10-07,Yes,Apex Field Tech,2026-10-19,1,Live,,2026-10-19
+S002,Dallas Store #102,Dallas,TX,Central,1,2026-10-19,Cascade Fiber,2026-09-04,2026-10-04,2026-10-24,Delivered,Delivered,2026-10-07,Yes,NorthStar Install,,2,Live,Site not ready (no access),2026-10-25
+S003,Baltimore Store #103,Baltimore,MD,East,1,2026-10-19,Cascade Fiber,2026-09-04,2026-10-04,2026-10-04,Delivered,Delivered,2026-10-07,Yes,FieldPro Services,2026-10-19,1,Live,,2026-10-19
+S004,San Jose Store #104,San Jose,CA,West,1,2026-10-19,Bluewave Telecom,2026-09-04,2026-10-04,2026-10-03,Delivered,Delivered,2026-10-07,Yes,Apex Field Tech,,2,Live,Circuit not active,2026-10-26
+S005,Dallas Store #105,Dallas,TX,Central,1,2026-10-19,Bluewave Telecom,2026-09-04,2026-10-04,2026-10-03,Delivered,Delivered,2026-10-07,Yes,NorthStar Install,2026-11-24,1,Rescheduled,Power not available in network closet,
+S006,Charlotte Store #106,Charlotte,NC,East,1,2026-10-19,Bluewave Telecom,2026-09-04,2026-10-04,2026-10-09,Delivered,Delivered,2026-10-07,Yes,FieldPro Services,2026-10-19,1,Live,,2026-10-19
+S007,Tucson Store #107,Tucson,AZ,West,1,2026-10-19,Bluewave Telecom,2026-09-04,2026-10-04,2026-10-02,Delivered,Delivered,2026-10-07,Yes,Apex Field Tech,2026-10-19,1,Live,,2026-10-19
+S008,Madison Store #108,Madison,WI,Central,1,2026-10-19,Cascade Fiber,2026-09-04,2026-10-04,2026-10-13,Delivered,Delivered,2026-10-07,Yes,NorthStar Install,2026-10-19,1,Live,,2026-10-19
+S009,Baltimore Store #109,Baltimore,MD,East,1,2026-10-19,Cascade Fiber,2026-09-04,2026-10-04,2026-10-23,Delivered,Delivered,2026-10-07,Yes,FieldPro Services,2026-10-19,1,Live,,2026-10-19
+S010,Tucson Store #110,Tucson,AZ,West,1,2026-10-19,Cascade Fiber,2026-09-04,2026-10-04,2026-10-04,Delivered,Delivered,2026-10-07,Yes,Apex Field Tech,2026-10-19,1,Live,,2026-10-19
+S011,Austin Store #111,Austin,TX,Central,1,2026-10-19,Bluewave Telecom,2026-09-04,2026-10-04,2026-10-01,Delivered,Delivered,2026-10-07,Yes,NorthStar Install,2026-10-19,1,Live,,2026-10-19
+S012,Charlotte Store #112,Charlotte,NC,East,1,2026-10-19,Bluewave Telecom,2026-09-04,2026-10-04,2026-10-02,Delivered,Delivered,2026-10-07,Yes,FieldPro Services,2026-10-19,1,Live,,2026-10-19
+S013,Boise Store #113,Boise,ID,West,1,2026-10-19,Bluewave Telecom,2026-09-04,2026-10-04,2026-10-01,Delivered,Delivered,2026-10-07,Yes,Apex Field Tech,2026-11-26,1,Rescheduled,Site not ready (no access),
+S014,Dallas Store #114,Dallas,TX,Central,1,2026-10-19,Cascade Fiber,2026-09-04,2026-10-04,2026-10-01,Delivered,Delivered,2026-10-07,Yes,NorthStar Install,2026-10-19,1,Live,,2026-10-19
+S015,Tampa Store #115,Tampa,FL,East,2,2026-10-26,Bluewave Telecom,2026-09-11,2026-10-11,2026-10-08,Delivered,Delivered,2026-10-14,Yes,FieldPro Services,2026-10-26,1,Live,,2026-10-26
+S016,Fresno Store #116,Fresno,CA,West,2,2026-10-26,Bluewave Telecom,2026-09-11,2026-10-11,2026-10-09,Delivered,Delivered,2026-10-14,Yes,Apex Field Tech,2026-10-26,1,Live,,2026-10-26
+S017,Omaha Store #117,Omaha,NE,Central,2,2026-10-26,Cascade Fiber,2026-09-11,2026-10-11,2026-10-08,Delivered,Delivered,2026-10-14,Yes,NorthStar Install,,2,Live,Technician no-show,2026-11-04
+S018,Richmond Store #118,Richmond,VA,East,2,2026-10-26,Bluewave Telecom,2026-09-11,2026-10-11,2026-10-09,Delivered,Delivered,2026-10-14,Yes,FieldPro Services,2026-10-26,1,Live,,2026-10-26
+S019,Boise Store #119,Boise,ID,West,2,2026-10-26,Bluewave Telecom,2026-09-11,2026-10-11,2026-10-10,Delivered,Delivered,2026-10-14,Yes,Apex Field Tech,2026-10-26,1,Live,,2026-10-26
+S020,Austin Store #120,Austin,TX,Central,2,2026-10-26,Cascade Fiber,2026-09-11,2026-10-11,2026-10-11,Delivered,Delivered,2026-10-14,Yes,NorthStar Install,2026-10-26,1,Live,,2026-10-26
+S021,Richmond Store #121,Richmond,VA,East,2,2026-10-26,Cascade Fiber,2026-09-11,2026-10-11,2026-10-28,Delivered,Delivered,2026-10-14,Yes,FieldPro Services,2026-10-26,1,Live,,2026-10-26
+S022,Boise Store #122,Boise,ID,West,2,2026-10-26,Bluewave Telecom,2026-09-11,2026-10-11,2026-10-11,Delivered,Delivered,2026-10-14,Yes,Apex Field Tech,2026-10-26,1,Live,,2026-10-26
+S023,Chicago Store #123,Chicago,IL,Central,2,2026-10-26,Cascade Fiber,2026-09-11,2026-10-11,2026-10-08,Delivered,Delivered,2026-10-14,Yes,NorthStar Install,2026-10-26,1,Live,,2026-10-26
+S024,Atlanta Store #124,Atlanta,GA,East,2,2026-10-26,Cascade Fiber,2026-09-11,2026-10-11,2026-10-08,Delivered,Delivered,2026-10-14,Yes,FieldPro Services,2026-10-26,1,Live,,2026-10-26
+S025,Boise Store #125,Boise,ID,West,2,2026-10-26,Bluewave Telecom,2026-09-11,2026-10-11,2026-10-10,Delivered,Delivered,2026-10-14,Yes,Apex Field Tech,2026-10-26,1,Live,,2026-10-26
+S026,Tulsa Store #126,Tulsa,OK,Central,2,2026-10-26,Bluewave Telecom,2026-09-11,2026-10-11,2026-10-21,Delivered,Delivered,2026-10-14,Yes,NorthStar Install,2026-10-26,1,Live,,2026-10-26
+S027,Richmond Store #127,Richmond,VA,East,2,2026-10-26,Bluewave Telecom,2026-09-11,2026-10-11,2026-10-09,Delivered,Delivered,2026-10-14,Yes,FieldPro Services,2026-10-26,1,Live,,2026-10-26
+S028,Fresno Store #128,Fresno,CA,West,2,2026-10-26,Bluewave Telecom,2026-09-11,2026-10-11,2026-10-08,Delivered,Delivered,2026-10-14,Yes,Apex Field Tech,2026-10-26,1,Live,,2026-10-26
+S029,Kansas City Store #129,Kansas City,MO,Central,3,2026-11-02,Cascade Fiber,2026-09-18,2026-10-18,2026-11-01,Delivered,Delivered,2026-10-21,Yes,NorthStar Install,2026-11-02,1,Live,,2026-11-02
+S030,Nashville Store #130,Nashville,TN,East,3,2026-11-02,Bluewave Telecom,2026-09-18,2026-10-18,2026-10-18,Delivered,Delivered,2026-10-21,Yes,FieldPro Services,2026-11-02,1,Live,,2026-11-02
+S031,Boise Store #131,Boise,ID,West,3,2026-11-02,Cascade Fiber,2026-09-18,2026-10-18,2026-10-18,Delivered,Delivered,2026-10-21,Yes,Apex Field Tech,2026-11-02,1,Live,,2026-11-02
+S032,Kansas City Store #132,Kansas City,MO,Central,3,2026-11-02,Bluewave Telecom,2026-09-18,2026-10-18,2026-10-16,Delivered,Delivered,2026-10-21,Yes,NorthStar Install,2026-11-02,1,Live,,2026-11-02
+S033,Richmond Store #133,Richmond,VA,East,3,2026-11-02,Cascade Fiber,2026-09-18,2026-10-18,2026-11-08,Delivered,Delivered,2026-10-21,Yes,FieldPro Services,2026-11-02,1,Live,,2026-11-02
+S034,Boise Store #134,Boise,ID,West,3,2026-11-02,Bluewave Telecom,2026-09-18,2026-10-18,2026-10-17,Delivered,Delivered,2026-10-21,Yes,Apex Field Tech,2026-11-02,1,Live,,2026-11-02
+S035,Chicago Store #135,Chicago,IL,Central,3,2026-11-02,Bluewave Telecom,2026-09-18,2026-10-18,2026-10-15,Delivered,Delivered,2026-10-21,Yes,NorthStar Install,2026-11-02,1,Live,,2026-11-02
+S036,Atlanta Store #136,Atlanta,GA,East,3,2026-11-02,Bluewave Telecom,2026-09-18,2026-10-18,2026-10-15,Delivered,Delivered,2026-10-21,Yes,FieldPro Services,2026-11-02,1,Live,,2026-11-02
+S037,Boise Store #137,Boise,ID,West,3,2026-11-02,Cascade Fiber,2026-09-18,2026-10-18,2026-10-16,Delivered,Delivered,2026-10-21,Yes,Apex Field Tech,2026-11-02,1,Live,,2026-11-02
+S038,Tulsa Store #138,Tulsa,OK,Central,3,2026-11-02,Cascade Fiber,2026-09-18,2026-10-18,2026-11-06,Delivered,Delivered,2026-10-21,Yes,NorthStar Install,,2,Live,Circuit not active,2026-11-07
+S039,Nashville Store #139,Nashville,TN,East,3,2026-11-02,Bluewave Telecom,2026-09-18,2026-10-18,2026-10-18,Delivered,Delivered,2026-10-21,Yes,FieldPro Services,2026-11-02,1,Live,,2026-11-02
+S040,Fresno Store #140,Fresno,CA,West,3,2026-11-02,Bluewave Telecom,2026-09-18,2026-10-18,2026-10-17,Delivered,Delivered,2026-10-21,Yes,Apex Field Tech,2026-11-02,1,Live,,2026-11-02
+S041,Austin Store #141,Austin,TX,Central,3,2026-11-02,Cascade Fiber,2026-09-18,2026-10-18,2026-10-18,Delivered,Delivered,2026-10-21,Yes,NorthStar Install,2026-11-02,1,Live,,2026-11-02
+S042,Tampa Store #142,Tampa,FL,East,3,2026-11-02,Bluewave Telecom,2026-09-18,2026-10-18,2026-10-18,Delivered,Delivered,2026-10-21,Yes,FieldPro Services,2026-11-02,1,Live,,2026-11-02
+S043,Sacramento Store #143,Sacramento,CA,West,4,2026-11-09,Bluewave Telecom,2026-09-25,2026-10-25,2026-11-12,Delivered,Delivered,2026-10-28,Yes,Apex Field Tech,2026-11-09,1,Live,,2026-11-09
+S044,Austin Store #144,Austin,TX,Central,4,2026-11-09,Bluewave Telecom,2026-09-25,2026-10-25,2026-10-22,Delivered,Delivered,2026-10-28,Yes,NorthStar Install,2026-11-09,1,Live,,2026-11-09
+S045,Columbus Store #145,Columbus,OH,East,4,2026-11-09,Cascade Fiber,2026-09-25,2026-10-25,2026-10-25,Delivered,Delivered,2026-10-28,Yes,FieldPro Services,,2,Live,Site not ready (no access),2026-11-16
+S046,Phoenix Store #146,Phoenix,AZ,West,4,2026-11-09,Bluewave Telecom,2026-09-25,2026-10-25,2026-10-24,Delivered,Delivered,2026-10-28,Yes,Apex Field Tech,2026-11-23,2,Rescheduled,Circuit not active,
+S047,Tulsa Store #147,Tulsa,OK,Central,4,2026-11-09,Cascade Fiber,2026-09-25,2026-10-25,2026-10-24,Delivered,Delivered,2026-10-28,Yes,NorthStar Install,2026-11-29,1,Rescheduled,Wrong hardware shipped,
+S048,Tampa Store #148,Tampa,FL,East,4,2026-11-09,Bluewave Telecom,2026-09-25,2026-10-25,2026-10-24,Delivered,Delivered,2026-10-28,Yes,FieldPro Services,2026-11-09,1,Live,,2026-11-09
+S049,San Jose Store #149,San Jose,CA,West,4,2026-11-09,Bluewave Telecom,2026-09-25,2026-10-25,2026-10-25,Delivered,Delivered,2026-10-28,Yes,Apex Field Tech,2026-11-09,1,Live,,2026-11-09
+S050,Austin Store #150,Austin,TX,Central,4,2026-11-09,Cascade Fiber,2026-09-25,2026-10-25,2026-10-25,Delivered,Delivered,2026-10-28,Yes,NorthStar Install,2026-11-09,1,Live,,2026-11-09
+S051,Columbus Store #151,Columbus,OH,East,4,2026-11-09,Bluewave Telecom,2026-09-25,2026-10-25,2026-10-22,Delivered,Delivered,2026-10-28,Yes,FieldPro Services,2026-11-09,1,Live,,2026-11-09
+S052,Fresno Store #152,Fresno,CA,West,4,2026-11-09,Bluewave Telecom,2026-09-25,2026-10-25,2026-11-04,Delivered,Delivered,2026-10-28,Yes,Apex Field Tech,2026-11-09,1,Live,,2026-11-09
+S053,Dallas Store #153,Dallas,TX,Central,4,2026-11-09,Bluewave Telecom,2026-09-25,2026-10-25,2026-10-25,Delivered,Delivered,2026-10-28,Yes,NorthStar Install,2026-11-09,1,Live,,2026-11-09
+S054,Baltimore Store #154,Baltimore,MD,East,4,2026-11-09,Bluewave Telecom,2026-09-25,2026-10-25,2026-10-22,Delivered,Delivered,2026-10-28,Yes,FieldPro Services,2026-11-09,1,Live,,2026-11-09
+S055,Reno Store #155,Reno,NV,West,4,2026-11-09,Bluewave Telecom,2026-09-25,2026-10-25,2026-10-23,Delivered,Delivered,2026-10-28,Yes,Apex Field Tech,2026-11-09,1,Live,,2026-11-09
+S056,Omaha Store #156,Omaha,NE,Central,4,2026-11-09,Bluewave Telecom,2026-09-25,2026-10-25,2026-10-25,Delivered,Delivered,2026-10-28,Yes,NorthStar Install,2026-11-09,1,Live,,2026-11-09
+S057,Columbus Store #157,Columbus,OH,East,5,2026-11-16,Cascade Fiber,2026-10-02,2026-11-01,2026-11-07,Delivered,Delivered,2026-11-04,Yes,FieldPro Services,2026-11-16,0,Scheduled,,
+S058,Portland Store #158,Portland,OR,West,5,2026-11-16,Bluewave Telecom,2026-10-02,2026-11-01,2026-10-31,Delivered,Delivered,2026-11-04,Yes,Apex Field Tech,,0,Not started,,
+S059,Tulsa Store #159,Tulsa,OK,Central,5,2026-11-16,Cascade Fiber,2026-10-02,2026-11-01,2026-10-29,Delivered,Delivered,2026-11-04,Yes,NorthStar Install,2026-11-16,0,Scheduled,,
+S060,Charlotte Store #160,Charlotte,NC,East,5,2026-11-16,Cascade Fiber,2026-10-02,2026-11-01,2026-10-31,Delivered,Delivered,2026-11-04,Yes,FieldPro Services,2026-11-16,0,Scheduled,,
+S061,Phoenix Store #161,Phoenix,AZ,West,5,2026-11-16,Bluewave Telecom,2026-10-02,2026-11-01,2026-10-29,Delivered,Delivered,2026-11-04,Yes,Apex Field Tech,2026-11-16,0,Scheduled,,
+S062,Tulsa Store #162,Tulsa,OK,Central,5,2026-11-16,Cascade Fiber,2026-10-02,2026-11-01,2026-10-30,Delivered,Delivered,2026-11-04,Yes,NorthStar Install,2026-11-16,0,Scheduled,,
+S063,Nashville Store #163,Nashville,TN,East,5,2026-11-16,Bluewave Telecom,2026-10-02,2026-11-01,2026-10-30,Delivered,Delivered,2026-11-04,Yes,FieldPro Services,2026-11-16,0,Scheduled,,
+S064,Fresno Store #164,Fresno,CA,West,5,2026-11-16,Cascade Fiber,2026-10-02,2026-11-01,2026-10-31,Delivered,Delivered,2026-11-04,Yes,Apex Field Tech,,0,Not started,,
+S065,Dallas Store #165,Dallas,TX,Central,5,2026-11-16,Cascade Fiber,2026-10-02,2026-11-01,2026-11-10,Delivered,Delivered,2026-11-04,Yes,NorthStar Install,2026-11-16,0,Scheduled,,
+S066,Richmond Store #166,Richmond,VA,East,5,2026-11-16,Bluewave Telecom,2026-10-02,2026-11-01,2026-10-30,Delivered,Delivered,2026-11-04,Yes,FieldPro Services,2026-11-16,0,Scheduled,,
+S067,Tucson Store #167,Tucson,AZ,West,5,2026-11-16,Bluewave Telecom,2026-10-02,2026-11-01,2026-11-06,Delivered,Delivered,2026-11-04,Yes,Apex Field Tech,2026-11-16,0,Scheduled,,
+S068,Austin Store #168,Austin,TX,Central,5,2026-11-16,Cascade Fiber,2026-10-02,2026-11-01,2026-11-05,Delivered,Delivered,2026-11-04,Yes,NorthStar Install,2026-11-16,0,Scheduled,,
+S069,Pittsburgh Store #169,Pittsburgh,PA,East,5,2026-11-16,Cascade Fiber,2026-10-02,2026-11-01,2026-11-01,Delivered,Delivered,2026-11-04,Yes,FieldPro Services,2026-11-16,0,Scheduled,,
+S070,Fresno Store #170,Fresno,CA,West,5,2026-11-16,Bluewave Telecom,2026-10-02,2026-11-01,2026-10-29,Delivered,Delivered,2026-11-04,Yes,Apex Field Tech,,0,Not started,,
+S071,Kansas City Store #171,Kansas City,MO,Central,6,2026-11-23,Bluewave Telecom,2026-10-09,2026-11-08,,Overdue,Delivered,2026-11-11,Yes,NorthStar Install,2026-11-23,0,Scheduled,,
+S072,Richmond Store #172,Richmond,VA,East,6,2026-11-23,Cascade Fiber,2026-10-09,2026-11-08,,Overdue,Backordered,2026-12-04,Yes,FieldPro Services,2026-11-23,0,Scheduled,,
+S073,Sacramento Store #173,Sacramento,CA,West,6,2026-11-23,Cascade Fiber,2026-10-09,2026-11-08,2026-11-06,Delivered,Backordered,2026-12-04,No,Apex Field Tech,2026-11-23,0,Scheduled,,
+S074,Omaha Store #174,Omaha,NE,Central,6,2026-11-23,Bluewave Telecom,2026-10-09,2026-11-08,2026-11-05,Delivered,Backordered,2026-12-04,Yes,NorthStar Install,2026-11-23,0,Scheduled,,
+S075,Nashville Store #175,Nashville,TN,East,6,2026-11-23,Bluewave Telecom,2026-10-09,2026-11-08,2026-11-06,Delivered,Delivered,2026-11-11,Yes,FieldPro Services,2026-11-23,0,Scheduled,,
+S076,Sacramento Store #176,Sacramento,CA,West,6,2026-11-23,Cascade Fiber,2026-10-09,2026-11-08,2026-11-13,Delivered,Delivered,2026-11-11,No,Apex Field Tech,2026-11-23,0,Scheduled,,
+S077,Kansas City Store #177,Kansas City,MO,Central,6,2026-11-23,Cascade Fiber,2026-10-09,2026-11-08,,Overdue,Delivered,2026-11-11,Yes,NorthStar Install,2026-11-23,0,Scheduled,,
+S078,Baltimore Store #178,Baltimore,MD,East,6,2026-11-23,Bluewave Telecom,2026-10-09,2026-11-08,,Overdue,Backordered,2026-12-04,Yes,FieldPro Services,2026-11-23,0,Scheduled,,
+S079,Boise Store #179,Boise,ID,West,6,2026-11-23,Bluewave Telecom,2026-10-09,2026-11-08,2026-11-07,Delivered,Backordered,2026-12-04,Yes,Apex Field Tech,2026-11-23,0,Scheduled,,
+S080,Austin Store #180,Austin,TX,Central,6,2026-11-23,Cascade Fiber,2026-10-09,2026-11-08,2026-11-05,Delivered,Backordered,2026-12-04,Yes,NorthStar Install,2026-11-23,0,Scheduled,,
+S081,Atlanta Store #181,Atlanta,GA,East,6,2026-11-23,Cascade Fiber,2026-10-09,2026-11-08,2026-11-07,Delivered,Backordered,2026-12-04,No,FieldPro Services,2026-11-23,0,Scheduled,,
+S082,Portland Store #182,Portland,OR,West,6,2026-11-23,Bluewave Telecom,2026-10-09,2026-11-08,,Overdue,Delivered,2026-11-11,Yes,Apex Field Tech,,0,Not started,,
+S083,Chicago Store #183,Chicago,IL,Central,6,2026-11-23,Bluewave Telecom,2026-10-09,2026-11-08,2026-11-05,Delivered,Backordered,2026-12-04,Yes,NorthStar Install,2026-11-23,0,Scheduled,,
+S084,Atlanta Store #184,Atlanta,GA,East,6,2026-11-23,Bluewave Telecom,2026-10-09,2026-11-08,2026-11-05,Delivered,Delivered,2026-11-11,Yes,FieldPro Services,2026-11-23,0,Scheduled,,
+S085,San Jose Store #185,San Jose,CA,West,7,2026-11-30,Bluewave Telecom,2026-10-16,2026-11-15,2026-11-14,Delivered,Backordered,2026-12-04,No,Apex Field Tech,2026-11-30,0,Scheduled,,
+S086,Dallas Store #186,Dallas,TX,Central,7,2026-11-30,Cascade Fiber,2026-10-16,2026-11-15,2026-11-15,Delivered,Shipped,2026-11-22,Yes,NorthStar Install,2026-11-30,0,Scheduled,,
+S087,Nashville Store #187,Nashville,TN,East,7,2026-11-30,Cascade Fiber,2026-10-16,2026-11-15,2026-11-15,Delivered,Shipped,2026-11-22,Yes,FieldPro Services,2026-11-30,0,Scheduled,,
+S088,Fresno Store #188,Fresno,CA,West,7,2026-11-30,Bluewave Telecom,2026-10-16,2026-11-15,2026-11-15,Delivered,Shipped,2026-11-22,Yes,Apex Field Tech,2026-11-30,0,Scheduled,,
+S089,Omaha Store #189,Omaha,NE,Central,7,2026-11-30,Bluewave Telecom,2026-10-16,2026-11-15,2026-11-12,Delivered,Shipped,2026-11-22,No,NorthStar Install,,0,Not started,,
+S090,Pittsburgh Store #190,Pittsburgh,PA,East,7,2026-11-30,Bluewave Telecom,2026-10-16,2026-11-15,2026-11-14,Delivered,Backordered,2026-12-04,No,FieldPro Services,2026-11-30,0,Scheduled,,
+S091,Portland Store #191,Portland,OR,West,7,2026-11-30,Bluewave Telecom,2026-10-16,2026-11-15,2026-11-12,Delivered,Backordered,2026-12-04,Yes,Apex Field Tech,2026-11-30,0,Scheduled,,
+S092,Omaha Store #192,Omaha,NE,Central,7,2026-11-30,Bluewave Telecom,2026-10-16,2026-11-15,2026-11-13,Delivered,Backordered,2026-12-04,Yes,NorthStar Install,2026-11-30,0,Scheduled,,
+S093,Baltimore Store #193,Baltimore,MD,East,7,2026-11-30,Cascade Fiber,2026-10-16,2026-11-15,,Overdue,Backordered,2026-12-04,Yes,FieldPro Services,,0,Not started,,
+S094,Tucson Store #194,Tucson,AZ,West,7,2026-11-30,Bluewave Telecom,2026-10-16,2026-11-15,2026-11-14,Delivered,Backordered,2026-12-04,No,Apex Field Tech,2026-11-30,0,Scheduled,,
+S095,Kansas City Store #195,Kansas City,MO,Central,7,2026-11-30,Bluewave Telecom,2026-10-16,2026-11-15,2026-11-13,Delivered,Shipped,2026-11-22,Yes,NorthStar Install,2026-11-30,0,Scheduled,,
+S096,Nashville Store #196,Nashville,TN,East,7,2026-11-30,Cascade Fiber,2026-10-16,2026-11-15,,Overdue,Shipped,2026-11-22,Yes,FieldPro Services,2026-11-30,0,Scheduled,,
+S097,Phoenix Store #197,Phoenix,AZ,West,7,2026-11-30,Cascade Fiber,2026-10-16,2026-11-15,,Overdue,Backordered,2026-12-04,Yes,Apex Field Tech,,0,Not started,,
+S098,Dallas Store #198,Dallas,TX,Central,7,2026-11-30,Bluewave Telecom,2026-10-16,2026-11-15,2026-11-15,Delivered,Shipped,2026-11-22,Yes,NorthStar Install,2026-11-30,0,Scheduled,,
+S099,Tampa Store #199,Tampa,FL,East,8,2026-12-07,Cascade Fiber,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,FieldPro Services,2026-12-07,0,Scheduled,,
+S100,Portland Store #200,Portland,OR,West,8,2026-12-07,Bluewave Telecom,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,Apex Field Tech,2026-12-07,0,Scheduled,,
+S101,Austin Store #201,Austin,TX,Central,8,2026-12-07,Cascade Fiber,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,NorthStar Install,2026-12-07,0,Scheduled,,
+S102,Tampa Store #202,Tampa,FL,East,8,2026-12-07,Bluewave Telecom,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,FieldPro Services,,0,Not started,,
+S103,Reno Store #203,Reno,NV,West,8,2026-12-07,Bluewave Telecom,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,Apex Field Tech,2026-12-07,0,Scheduled,,
+S104,Kansas City Store #204,Kansas City,MO,Central,8,2026-12-07,Bluewave Telecom,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,NorthStar Install,2026-12-07,0,Scheduled,,
+S105,Pittsburgh Store #205,Pittsburgh,PA,East,8,2026-12-07,Cascade Fiber,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,FieldPro Services,2026-12-07,0,Scheduled,,
+S106,Tucson Store #206,Tucson,AZ,West,8,2026-12-07,Bluewave Telecom,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,Apex Field Tech,2026-12-07,0,Scheduled,,
+S107,Madison Store #207,Madison,WI,Central,8,2026-12-07,Bluewave Telecom,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,NorthStar Install,2026-12-07,0,Scheduled,,
+S108,Richmond Store #208,Richmond,VA,East,8,2026-12-07,Bluewave Telecom,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,FieldPro Services,2026-12-07,0,Scheduled,,
+S109,Reno Store #209,Reno,NV,West,8,2026-12-07,Cascade Fiber,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,Apex Field Tech,2026-12-07,0,Scheduled,,
+S110,Chicago Store #210,Chicago,IL,Central,8,2026-12-07,Cascade Fiber,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,NorthStar Install,2026-12-07,0,Scheduled,,
+S111,Atlanta Store #211,Atlanta,GA,East,8,2026-12-07,Bluewave Telecom,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,No,FieldPro Services,2026-12-07,0,Scheduled,,
+S112,Reno Store #212,Reno,NV,West,8,2026-12-07,Cascade Fiber,2026-10-23,2026-11-22,,Ordered,Not shipped,2026-11-27,Not confirmed,Apex Field Tech,2026-12-07,0,Scheduled,,
+S113,Kansas City Store #213,Kansas City,MO,Central,9,2026-12-14,Bluewave Telecom,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,NorthStar Install,,0,Not started,,
+S114,Richmond Store #214,Richmond,VA,East,9,2026-12-14,Cascade Fiber,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,FieldPro Services,,0,Not started,,
+S115,Tucson Store #215,Tucson,AZ,West,9,2026-12-14,Cascade Fiber,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,Apex Field Tech,,0,Not started,,
+S116,Madison Store #216,Madison,WI,Central,9,2026-12-14,Cascade Fiber,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,NorthStar Install,,0,Not started,,
+S117,Richmond Store #217,Richmond,VA,East,9,2026-12-14,Bluewave Telecom,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,FieldPro Services,,0,Not started,,
+S118,Fresno Store #218,Fresno,CA,West,9,2026-12-14,Bluewave Telecom,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,Apex Field Tech,,0,Not started,,
+S119,Omaha Store #219,Omaha,NE,Central,9,2026-12-14,Bluewave Telecom,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,NorthStar Install,,0,Not started,,
+S120,Richmond Store #220,Richmond,VA,East,9,2026-12-14,Bluewave Telecom,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,FieldPro Services,,0,Not started,,
+S121,Fresno Store #221,Fresno,CA,West,9,2026-12-14,Cascade Fiber,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,Apex Field Tech,,0,Not started,,
+S122,Chicago Store #222,Chicago,IL,Central,9,2026-12-14,Cascade Fiber,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,NorthStar Install,,0,Not started,,
+S123,Atlanta Store #223,Atlanta,GA,East,9,2026-12-14,Bluewave Telecom,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,FieldPro Services,,0,Not started,,
+S124,Boise Store #224,Boise,ID,West,9,2026-12-14,Bluewave Telecom,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,Apex Field Tech,,0,Not started,,
+S125,Omaha Store #225,Omaha,NE,Central,9,2026-12-14,Bluewave Telecom,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,NorthStar Install,,0,Not started,,
+S126,Pittsburgh Store #226,Pittsburgh,PA,East,9,2026-12-14,Cascade Fiber,2026-10-30,2026-11-29,,Ordered,Not shipped,2026-12-04,Not confirmed,FieldPro Services,,0,Not started,,
+S127,Fresno Store #227,Fresno,CA,West,10,2026-12-21,Cascade Fiber,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,Apex Field Tech,,0,Not started,,
+S128,Omaha Store #228,Omaha,NE,Central,10,2026-12-21,Bluewave Telecom,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,NorthStar Install,,0,Not started,,
+S129,Columbus Store #229,Columbus,OH,East,10,2026-12-21,Bluewave Telecom,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,FieldPro Services,,0,Not started,,
+S130,Fresno Store #230,Fresno,CA,West,10,2026-12-21,Cascade Fiber,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,Apex Field Tech,,0,Not started,,
+S131,Omaha Store #231,Omaha,NE,Central,10,2026-12-21,Cascade Fiber,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,NorthStar Install,,0,Not started,,
+S132,Charlotte Store #232,Charlotte,NC,East,10,2026-12-21,Bluewave Telecom,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,FieldPro Services,,0,Not started,,
+S133,Reno Store #233,Reno,NV,West,10,2026-12-21,Bluewave Telecom,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,Apex Field Tech,,0,Not started,,
+S134,Austin Store #234,Austin,TX,Central,10,2026-12-21,Bluewave Telecom,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,NorthStar Install,,0,Not started,,
+S135,Richmond Store #235,Richmond,VA,East,10,2026-12-21,Cascade Fiber,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,FieldPro Services,,0,Not started,,
+S136,Phoenix Store #236,Phoenix,AZ,West,10,2026-12-21,Cascade Fiber,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,Apex Field Tech,,0,Not started,,
+S137,Dallas Store #237,Dallas,TX,Central,10,2026-12-21,Bluewave Telecom,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,NorthStar Install,,0,Not started,,
+S138,Baltimore Store #238,Baltimore,MD,East,10,2026-12-21,Cascade Fiber,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,FieldPro Services,,0,Not started,,
+S139,San Jose Store #239,San Jose,CA,West,10,2026-12-21,Cascade Fiber,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,Apex Field Tech,,0,Not started,,
+S140,Tulsa Store #240,Tulsa,OK,Central,10,2026-12-21,Cascade Fiber,2026-11-06,2026-12-06,,Ordered,Not shipped,2026-12-11,Not confirmed,NorthStar Install,,0,Not started,,
+S141,Pittsburgh Store #241,Pittsburgh,PA,East,11,2026-12-28,Cascade Fiber,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,FieldPro Services,,0,Not started,,
+S142,Reno Store #242,Reno,NV,West,11,2026-12-28,Cascade Fiber,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,Apex Field Tech,,0,Not started,,
+S143,Chicago Store #243,Chicago,IL,Central,11,2026-12-28,Cascade Fiber,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,NorthStar Install,,0,Not started,,
+S144,Columbus Store #244,Columbus,OH,East,11,2026-12-28,Bluewave Telecom,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,FieldPro Services,,0,Not started,,
+S145,Boise Store #245,Boise,ID,West,11,2026-12-28,Bluewave Telecom,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,Apex Field Tech,,0,Not started,,
+S146,Omaha Store #246,Omaha,NE,Central,11,2026-12-28,Bluewave Telecom,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,NorthStar Install,,0,Not started,,
+S147,Tampa Store #247,Tampa,FL,East,11,2026-12-28,Cascade Fiber,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,FieldPro Services,,0,Not started,,
+S148,Portland Store #248,Portland,OR,West,11,2026-12-28,Cascade Fiber,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,Apex Field Tech,,0,Not started,,
+S149,Tulsa Store #249,Tulsa,OK,Central,11,2026-12-28,Cascade Fiber,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,NorthStar Install,,0,Not started,,
+S150,Pittsburgh Store #250,Pittsburgh,PA,East,11,2026-12-28,Bluewave Telecom,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,FieldPro Services,,0,Not started,,
+S151,Portland Store #251,Portland,OR,West,11,2026-12-28,Cascade Fiber,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,Apex Field Tech,,0,Not started,,
+S152,Denver Store #252,Denver,CO,Central,11,2026-12-28,Bluewave Telecom,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,NorthStar Install,,0,Not started,,
+S153,Tampa Store #253,Tampa,FL,East,11,2026-12-28,Bluewave Telecom,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,FieldPro Services,,0,Not started,,
+S154,Sacramento Store #254,Sacramento,CA,West,11,2026-12-28,Bluewave Telecom,2026-11-13,2026-12-13,,Ordered,Not shipped,2026-12-18,Not confirmed,Apex Field Tech,,0,Not started,,
+S155,Austin Store #255,Austin,TX,Central,12,2027-01-04,Bluewave Telecom,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,NorthStar Install,,0,Not started,,
+S156,Nashville Store #256,Nashville,TN,East,12,2027-01-04,Cascade Fiber,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,FieldPro Services,,0,Not started,,
+S157,Reno Store #257,Reno,NV,West,12,2027-01-04,Cascade Fiber,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,Apex Field Tech,,0,Not started,,
+S158,Dallas Store #258,Dallas,TX,Central,12,2027-01-04,Bluewave Telecom,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,NorthStar Install,,0,Not started,,
+S159,Richmond Store #259,Richmond,VA,East,12,2027-01-04,Bluewave Telecom,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,FieldPro Services,,0,Not started,,
+S160,Portland Store #260,Portland,OR,West,12,2027-01-04,Bluewave Telecom,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,Apex Field Tech,,0,Not started,,
+S161,Madison Store #261,Madison,WI,Central,12,2027-01-04,Bluewave Telecom,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,NorthStar Install,,0,Not started,,
+S162,Baltimore Store #262,Baltimore,MD,East,12,2027-01-04,Cascade Fiber,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,FieldPro Services,,0,Not started,,
+S163,Fresno Store #263,Fresno,CA,West,12,2027-01-04,Bluewave Telecom,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,Apex Field Tech,,0,Not started,,
+S164,Kansas City Store #264,Kansas City,MO,Central,12,2027-01-04,Cascade Fiber,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,NorthStar Install,,0,Not started,,
+S165,Nashville Store #265,Nashville,TN,East,12,2027-01-04,Cascade Fiber,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,FieldPro Services,,0,Not started,,
+S166,Portland Store #266,Portland,OR,West,12,2027-01-04,Bluewave Telecom,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,Apex Field Tech,,0,Not started,,
+S167,Dallas Store #267,Dallas,TX,Central,12,2027-01-04,Cascade Fiber,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,NorthStar Install,,0,Not started,,
+S168,Charlotte Store #268,Charlotte,NC,East,12,2027-01-04,Bluewave Telecom,2026-11-20,2026-12-20,,Ordered,Not shipped,2026-12-25,Not confirmed,FieldPro Services,,0,Not started,,
+S169,San Jose Store #269,San Jose,CA,West,13,2027-01-11,Bluewave Telecom,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,Apex Field Tech,,0,Not started,,
+S170,Tulsa Store #270,Tulsa,OK,Central,13,2027-01-11,Cascade Fiber,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,NorthStar Install,,0,Not started,,
+S171,Atlanta Store #271,Atlanta,GA,East,13,2027-01-11,Cascade Fiber,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,FieldPro Services,,0,Not started,,
+S172,Fresno Store #272,Fresno,CA,West,13,2027-01-11,Cascade Fiber,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,Apex Field Tech,,0,Not started,,
+S173,Kansas City Store #273,Kansas City,MO,Central,13,2027-01-11,Bluewave Telecom,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,NorthStar Install,,0,Not started,,
+S174,Charlotte Store #274,Charlotte,NC,East,13,2027-01-11,Bluewave Telecom,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,FieldPro Services,,0,Not started,,
+S175,Reno Store #275,Reno,NV,West,13,2027-01-11,Cascade Fiber,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,Apex Field Tech,,0,Not started,,
+S176,Omaha Store #276,Omaha,NE,Central,13,2027-01-11,Bluewave Telecom,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,NorthStar Install,,0,Not started,,
+S177,Atlanta Store #277,Atlanta,GA,East,13,2027-01-11,Bluewave Telecom,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,FieldPro Services,,0,Not started,,
+S178,Sacramento Store #278,Sacramento,CA,West,13,2027-01-11,Bluewave Telecom,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,Apex Field Tech,,0,Not started,,
+S179,Madison Store #279,Madison,WI,Central,13,2027-01-11,Bluewave Telecom,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,NorthStar Install,,0,Not started,,
+S180,Tampa Store #280,Tampa,FL,East,13,2027-01-11,Bluewave Telecom,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,FieldPro Services,,0,Not started,,
+S181,Sacramento Store #281,Sacramento,CA,West,13,2027-01-11,Cascade Fiber,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,Apex Field Tech,,0,Not started,,
+S182,Kansas City Store #282,Kansas City,MO,Central,13,2027-01-11,Cascade Fiber,2026-11-27,2026-12-27,,Ordered,Not shipped,2027-01-01,Not confirmed,NorthStar Install,,0,Not started,,
+S183,Tampa Store #283,Tampa,FL,East,14,2027-01-18,Cascade Fiber,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,FieldPro Services,,0,Not started,,
+S184,Reno Store #284,Reno,NV,West,14,2027-01-18,Cascade Fiber,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,Apex Field Tech,,0,Not started,,
+S185,Chicago Store #285,Chicago,IL,Central,14,2027-01-18,Bluewave Telecom,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,NorthStar Install,,0,Not started,,
+S186,Tampa Store #286,Tampa,FL,East,14,2027-01-18,Bluewave Telecom,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,FieldPro Services,,0,Not started,,
+S187,Sacramento Store #287,Sacramento,CA,West,14,2027-01-18,Cascade Fiber,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,Apex Field Tech,,0,Not started,,
+S188,Dallas Store #288,Dallas,TX,Central,14,2027-01-18,Bluewave Telecom,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,NorthStar Install,,0,Not started,,
+S189,Richmond Store #289,Richmond,VA,East,14,2027-01-18,Cascade Fiber,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,FieldPro Services,,0,Not started,,
+S190,Fresno Store #290,Fresno,CA,West,14,2027-01-18,Cascade Fiber,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,Apex Field Tech,,0,Not started,,
+S191,Kansas City Store #291,Kansas City,MO,Central,14,2027-01-18,Cascade Fiber,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,NorthStar Install,,0,Not started,,
+S192,Columbus Store #292,Columbus,OH,East,14,2027-01-18,Cascade Fiber,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,FieldPro Services,,0,Not started,,
+S193,Fresno Store #293,Fresno,CA,West,14,2027-01-18,Bluewave Telecom,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,Apex Field Tech,,0,Not started,,
+S194,Omaha Store #294,Omaha,NE,Central,14,2027-01-18,Bluewave Telecom,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,NorthStar Install,,0,Not started,,
+S195,Nashville Store #295,Nashville,TN,East,14,2027-01-18,Cascade Fiber,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,FieldPro Services,,0,Not started,,
+S196,Sacramento Store #296,Sacramento,CA,West,14,2027-01-18,Cascade Fiber,2026-12-04,2027-01-03,,Ordered,Not shipped,2027-01-08,Not confirmed,Apex Field Tech,,0,Not started,,
+S197,Omaha Store #297,Omaha,NE,Central,15,2027-01-25,Cascade Fiber,2026-12-11,2027-01-10,,Ordered,Not shipped,2027-01-15,Not confirmed,NorthStar Install,,0,Not started,,
+S198,Columbus Store #298,Columbus,OH,East,15,2027-01-25,Cascade Fiber,2026-12-11,2027-01-10,,Ordered,Not shipped,2027-01-15,Not confirmed,FieldPro Services,,0,Not started,,
+S199,Phoenix Store #299,Phoenix,AZ,West,15,2027-01-25,Cascade Fiber,2026-12-11,2027-01-10,,Ordered,Not shipped,2027-01-15,Not confirmed,Apex Field Tech,,0,Not started,,
+S200,Tulsa Store #300,Tulsa,OK,Central,15,2027-01-25,Cascade Fiber,2026-12-11,2027-01-10,,Ordered,Not shipped,2027-01-15,Not confirmed,NorthStar Install,,0,Not started,,

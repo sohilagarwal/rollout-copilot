@@ -1,0 +1,18 @@
+From: Store Operations
+To: Rollout PMO
+Date: 2026-11-13
+Subject: Stores not ready for install
+
+FYI, these stores will not be ready on their scheduled date:
+- S073 Sacramento Store #173: remodel in progress, network closet has no power yet
+- S076 Sacramento Store #176: remodel in progress, network closet has no power yet
+- S081 Atlanta Store #181: remodel in progress, network closet has no power yet
+- S085 San Jose Store #185: remodel in progress, network closet has no power yet
+- S089 Omaha Store #189: remodel in progress, network closet has no power yet
+- S090 Pittsburgh Store #190: remodel in progress, network closet has no power yet
+- S094 Tucson Store #194: remodel in progress, network closet has no power yet
+- S111 Atlanta Store #211: remodel in progress, network closet has no power yet
+
+Please move their installs out at least two weeks.
+
+Store Operations

@@ -1,0 +1,6 @@
+name,type,contract,account_manager,email
+Bluewave Telecom,Carrier,contracts/carrier_msa.md,Dana Reyes,dana.reyes@bluewave.example
+Cascade Fiber,Carrier,contracts/carrier_msa.md,Victor Lin,victor.lin@cascadefiber.example
+Apex Field Tech,Install vendor,contracts/install_vendor_sow.md,Maria Soto,maria.soto@apexfield.example
+NorthStar Install,Install vendor,contracts/install_vendor_sow.md,Greg Patel,greg.patel@northstar.example
+FieldPro Services,Install vendor,contracts/install_vendor_sow.md,Keisha Brown,keisha.brown@fieldpro.example
