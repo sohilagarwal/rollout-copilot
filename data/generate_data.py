@@ -62,12 +62,13 @@ for i in range(1, 201):
     abort_chance = 0.22 if vendor == "NorthStar Install" else 0.07
     if go_live < TODAY:
         attempts = 1
-        if not circuit_delivered or random.random() < abort_chance:
+        circuit_missing = not circuit_delivered or circuit_delivered > go_live   # no circuit on visit day
+        if circuit_missing or random.random() < abort_chance:
             install_status = "Aborted"
-            abort_reason = "Circuit not active" if not circuit_delivered else random.choice(ABORT_REASONS)
+            abort_reason = "Circuit not active" if circuit_missing else random.choice(ABORT_REASONS)
             if random.random() < 0.6 and circuit_delivered:   # rescheduled and finished
                 attempts, install_status = 2, "Live"
-                live_date = go_live + timedelta(days=random.randint(5, 12))
+                live_date = max(go_live + timedelta(days=random.randint(5, 12)), circuit_delivered + timedelta(days=2))
                 if live_date > TODAY: install_status, live_date, tech_date = "Rescheduled", None, go_live + timedelta(days=14)
             else:
                 tech_date = TODAY + timedelta(days=random.randint(3, 15))

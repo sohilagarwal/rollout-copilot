@@ -89,6 +89,8 @@ legend{font-weight:600;font-size:13px;padding:0 4px}
     <button data-tab="sites">Sites</button>
     <button data-tab="vendors">Vendors</button>
     <button data-tab="circuits">Late circuits</button>
+    <button data-tab="risk">Risk forecast</button>
+    <button data-tab="approvals">Approvals <span id="pendingCount" class="chip warn" hidden></span></button>
     <button data-tab="changes">Change log</button>
   </nav>
   <span class="spacer"></span>
@@ -126,6 +128,17 @@ legend{font-weight:600;font-size:13px;padding:0 4px}
 
   <section id="tab-circuits" hidden>
     <div class="card"><h2 id="lateTitle">Late circuits</h2><div class="tablewrap"><table id="lateTable"></table></div></div>
+  </section>
+
+  <section id="tab-risk" hidden>
+    <div class="card"><h2 id="riskTitle">Abort risk, next 21 days</h2><p class="muted" id="riskNote"></p>
+      <div class="tablewrap"><table id="riskScoreTable"></table></div></div>
+  </section>
+
+  <section id="tab-approvals" hidden>
+    <div class="card"><h2>Change requests <span class="muted" style="font-weight:400">· Claude proposes, you decide</span></h2>
+      <div class="filters"><input id="approver" placeholder="Your name (recorded with each decision)"></div>
+      <div class="tablewrap"><table id="reqTable"></table></div></div>
   </section>
 
   <section id="tab-changes" hidden>
@@ -185,7 +198,7 @@ $("#tabs").addEventListener("click", e => {
   try { localStorage.setItem("tab", b.dataset.tab); } catch(_){}
   loadTab(b.dataset.tab);
 });
-function loadTab(t){ ({overview:loadOverview, sites:loadSites, vendors:loadVendors, circuits:loadCircuits, changes:loadChanges})[t](); }
+function loadTab(t){ ({overview:loadOverview, sites:loadSites, vendors:loadVendors, circuits:loadCircuits, risk:loadRisk, approvals:loadApprovals, changes:loadChanges})[t](); refreshPending(); }
 
 // ---------- overview ----------
 async function loadOverview(){
@@ -264,6 +277,49 @@ async function loadCircuits(){
     r.circuits.map(c => `<tr class="click" data-id="${c.site_id}"><td><b>${c.site_id}</b></td><td>${esc(c.carrier)}</td><td>${c.ordered}</td><td>${c.due}</td>
       <td>${c.still_overdue?'<span class="chip bad">not yet</span>':c.delivered}</td><td>${c.days_late}</td><td>${Math.floor(c.days_late/7)}</td></tr>`).join("") + "</tbody>";
 }
+
+// ---------- risk forecast ----------
+async function loadRisk(){
+  const r = await api("/api/risk?days=21");
+  const b = r.backtest, bb = b.by_band;
+  $("#riskTitle").textContent = `Abort risk, next ${r.window_days} days: ${r.by_band.High||0} high, ${r.by_band.Medium||0} medium, ${r.by_band.Low||0} low`;
+  $("#riskNote").textContent = `Backtest on ${b.past_first_visits} past first visits: High-risk visits failed ${bb.High.failure_rate} of the time, Low-risk ${bb.Low.failure_rate}. `
+    + `It flagged ${b.failures_flagged_medium_or_high} failures. Expect about ${r.expected_failed_first_visits} failed first visits in this window. How it works: docs/risk_model.md.`;
+  const cls = {High:"bad", Medium:"warn", Low:"ok"};
+  $("#riskScoreTable").innerHTML = `<thead><tr><th>Site</th><th>Store</th><th>Go-live</th><th>Risk</th><th>Why</th></tr></thead><tbody>` +
+    r.sites.map(x => `<tr class="click" data-id="${x.site_id}"><td><b>${esc(x.site_id)}</b></td><td>${esc(x.name)}</td><td>${esc(x.go_live_target)}</td>
+      <td><span class="chip ${cls[x.band]}">${esc(x.risk)} ${esc(x.band)}</span></td><td class="wrap">${x.factors.map(esc).join("<br>")}</td></tr>`).join("") + "</tbody>";
+}
+
+// ---------- approvals ----------
+async function refreshPending(){
+  try{ const n = (await api("/api/requests?status=pending")).requests.length;
+       const c = $("#pendingCount"); c.textContent = n; c.hidden = !n; } catch(_){}
+}
+async function loadApprovals(){
+  try { $("#approver").value = $("#approver").value || localStorage.getItem("approver") || ""; } catch(_){}
+  const r = await api("/api/requests");
+  const cls = {pending:"warn", approved:"ok", rejected:"", failed:"bad"};
+  $("#reqTable").innerHTML = r.requests.length ? `<thead><tr><th>Request</th><th>Site</th><th>Change</th><th>Why</th><th>Impact</th><th>Status</th><th></th></tr></thead><tbody>` +
+    r.requests.map(q => `<tr><td><b>${esc(q.id)}</b><br><span class="muted">${esc(q.proposed_by)} · ${esc(q.proposed_at.replace("T"," "))}</span></td>
+      <td><b>${esc(q.site_id)}</b></td><td class="wrap">${fmtChanges(q.diff)}</td><td class="wrap">${esc(q.reason)}</td><td class="wrap">${esc(q.impact)||'<span class="muted">—</span>'}</td>
+      <td><span class="chip ${cls[q.status]}">${esc(q.status)}</span>${q.decided_by?`<br><span class="muted">${esc(q.decided_by)}</span>`:""}${q.decision_note?`<br><span class="muted">${esc(q.decision_note)}</span>`:""}</td>
+      <td>${q.status==="pending"?`<button class="btn primary" data-decide="approve" data-req="${esc(q.id)}">Approve</button> <button class="btn" data-decide="reject" data-req="${esc(q.id)}">Reject</button>`:""}</td></tr>`).join("") + "</tbody>"
+    : `<tbody><tr><td class="muted">No change requests yet. Ask Claude to move a go-live date, or run the risk-analyst, and its requests appear here.</td></tr></tbody>`;
+}
+document.addEventListener("click", async e => {
+  const b = e.target.closest("button[data-decide]"); if(!b) return;
+  const by = $("#approver").value.trim();
+  if(!by){ toast("Enter your name first: it is recorded with the decision."); $("#approver").focus(); return; }
+  try { localStorage.setItem("approver", by); } catch(_){}
+  b.disabled = true;
+  try{
+    const r = await api(`/api/requests/${b.dataset.req}/${b.dataset.decide}`, {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({by})});
+    toast(r.errors ? "Not done: " + r.errors.join("; ") : `${r.id} ${r.status}.` + (r.decision_note ? " " + r.decision_note : ""));
+    SITES = []; loadApprovals(); refreshPending();
+  } catch(err){ toast("Could not save: " + err.message); }
+  finally{ b.disabled = false; }
+});
 
 // ---------- change log ----------
 function fmtChanges(ch){ return Object.entries(ch).map(([k,v]) => `<b>${esc(LABEL(k))}</b>: ${esc(v.from||"—")} → ${esc(v.to||"—")}`).join("<br>"); }

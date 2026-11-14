@@ -1,5 +1,8 @@
 # Eval results, run 2026-11-12 (program date 2026-11-16)
 
+> **Out of date.** Week 2 fixed the sample data (a visit can't succeed before its circuit arrives),
+> which changed some answers, and added 4 questions. Run the evals again to replace this file.
+
 Score: **13/13** (100%)
 
 Method: Claude Code answered each question one at a time in an interactive session using only the `rollout` MCP tools, then checked each answer with the same rules as `evals/run_evals.py` (`must_include_any`, `must_not_include`). This is a self-graded run, not a `claude -p` run of `run_evals.py`.

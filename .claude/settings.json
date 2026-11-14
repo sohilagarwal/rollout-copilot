@@ -1,6 +1,11 @@
 {
   "permissions": {
-    "allow": ["mcp__rollout"]
+    "allow": ["mcp__rollout"],
+    "ask": [
+      "mcp__rollout__decide_change_request",
+      "mcp__rollout__update_site",
+      "mcp__rollout__add_site"
+    ]
   },
   "hooks": {
     "SessionStart": [
