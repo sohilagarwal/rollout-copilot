@@ -60,6 +60,37 @@ Run the skills:
 Watch what happens: Claude shows each tool it calls. That is the agent at work.
 Then open `audit/audit_log.jsonl` to see the record of every call.
 
+## Update the data
+
+**From the chat.** Tell Claude what changed, in plain words:
+
+- `S073's routers arrived today and the store says it's ready.`
+- `Cascade delivered the S072 circuit on 2026-11-17.`
+- `Book a technician for S058 on 2026-11-20.`
+- `Add a new site: Denver Store #301, Central, wave 15, Bluewave, ordered 2026-12-11.`
+- `What changed on S073 this week?`
+
+Claude uses the `update_site` and `add_site` tools. Claude Code asks you to approve each change.
+
+**From the web GUI.** Start it and open http://localhost:8000:
+
+```
+bash gui/start.sh
+```
+
+It has an overview (tiles, risk by cause, at-risk list), a searchable and filterable site table,
+the vendor scorecard, late circuits and a change log. Click any row to edit that site, or use
+**+ Add site**.
+
+**The same rules apply both ways** (`server/site_store.py`):
+- Every value is checked first. Bad dates, unknown status words and unknown vendors are refused, and nothing is saved.
+- Some fields fill themselves in. `circuit_status` follows from the circuit dates, a `live_date` makes the site Live, and `circuit_due` defaults to 30 days after the order.
+- Every change goes to `audit/changes.jsonl` with the time, who made it (Claude or GUI), the reason, and the old and new values.
+
+Once you edit the data, the numbers in `tests/test_tools.py` and `evals/questions.json` no longer
+match. To go back to the demo data, run `git checkout data/sites.csv`.
+To check the editing rules on a throwaway copy, run `.venv/bin/python tests/test_site_store.py`.
+
 ## Prove it works
 
 On your Mac:
@@ -103,7 +134,8 @@ The data hides a few real-world problems for the AI to find:
 CLAUDE.md               instructions the AI follows in this project
 .mcp.json               tells Claude Code how to start the rollout server
 .claude/skills/         the three saved workflows
-server/                 the MCP server, its tools, and start.sh
+server/                 the MCP server, its tools, start.sh, and site_store.py (checked edits)
+gui/                    the web GUI: app.py (server), index.html (page), start.sh
 data/                   sites, vendors, vendor emails (rebuild: python data/generate_data.py)
 docs/                   contracts and runbooks the AI searches
 evals/                  test questions and the runner

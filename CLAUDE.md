@@ -25,3 +25,8 @@ before it can go live.
   for a person to review. Never say a message was sent.
 - Keep a factual, no-blame tone with vendors. Quote the contract section that applies.
 - Save reports you are asked to write in `reports/`.
+- Change the site tracker only with `update_site` or `add_site`, and only when the user asks
+  for that change. Never edit `data/sites.csv` by hand. Give a short `reason` for every change.
+  If a change is refused, tell the user the errors; do not guess a different value.
+- After a change, say exactly what changed (old value → new value) and anything that was
+  filled in automatically. `site_changes` shows the history of edits.

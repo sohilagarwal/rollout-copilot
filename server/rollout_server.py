@@ -13,9 +13,13 @@ Tools:
   late_circuits     circuits past the carrier's 30-day delivery promise
   vendor_scorecard  first-time install success and late circuits by vendor
   search_docs       search contracts, runbooks and vendor emails (retrieval)
+  update_site       change fields of one site (checked before saving)
+  add_site          add a new site (checked before saving)
+  site_changes      history of edits to the tracker
   draft_email       save an email draft for a human to review; never sends
 
-Every tool call is written to audit/audit_log.jsonl.
+Every tool call is written to audit/audit_log.jsonl. Every data change is also written
+to audit/changes.jsonl with the old and new values (see site_store.py).
 """
 import csv, json, math, os, re
 from collections import Counter, defaultdict
@@ -24,6 +28,8 @@ from functools import wraps
 from pathlib import Path
 
 from mcp.server.mcpserver import MCPServer
+
+import site_store
 
 PROJECT = Path(os.environ.get("CLAUDE_PROJECT_DIR") or Path(__file__).resolve().parent.parent)
 DATA, DOCS = PROJECT / "data", PROJECT / "docs"
@@ -252,6 +258,43 @@ def search_docs(query: str, top_k: int = 4) -> dict:
     hits = [{"source": c["source"], "section": c["section"], "score": round(s, 2), "text": c["text"]}
             for s, c in scored[:max(1, min(top_k, 8))]]
     return {"query": query, "results": hits or [], "note": "" if hits else "No matching section. Try other keywords."}
+
+
+# ---------- data changes: checked, saved in one step, and logged ----------
+@server.tool()
+@audited
+def update_site(site_id: str, changes: dict[str, str], reason: str) -> dict:
+    """Change fields of one site in the tracker, only when the user has asked for that change.
+    changes: {field: new value}, for example {"hardware_status": "Delivered"} or
+    {"circuit_delivered": "2026-11-17"}. Use "" to clear a field. Dates are YYYY-MM-DD.
+    reason: why, in a few words, such as "Supplier confirmed delivery".
+    Allowed values: install_status Not started/Scheduled/Rescheduled/Live; hardware_status
+    Not shipped/Shipped/Delivered/Backordered; site_ready Yes/No/Not confirmed.
+    circuit_status fills itself in from the circuit dates; a live_date makes the site Live.
+    Nothing is saved if any value is wrong: the errors say what to fix."""
+    try:
+        return site_store.update_site(site_id, changes, by="Claude", reason=reason)
+    except site_store.ValidationError as e:
+        return {"saved": False, "errors": e.errors}
+
+@server.tool()
+@audited
+def add_site(fields: dict[str, str], reason: str) -> dict:
+    """Add a new site to the tracker, only when the user has asked for it. fields needs at least
+    name, city, state, region, wave, go_live_target, carrier, install_vendor and circuit_ordered.
+    site_id is optional (the next free ID is used); circuit_due defaults to 30 days after order.
+    Nothing is saved if any value is wrong: the errors say what to fix."""
+    try:
+        return site_store.add_site(fields, by="Claude", reason=reason)
+    except site_store.ValidationError as e:
+        return {"saved": False, "errors": e.errors}
+
+@server.tool()
+@audited
+def site_changes(site_id: str = "", limit: int = 20) -> dict:
+    """Recent edits to the site tracker, newest first, with who made each one (Claude or the
+    GUI), why, and the old and new values. Give site_id to see one site's history."""
+    return {"changes": site_store.recent_changes(max(1, min(limit, 200)), site_id)}
 
 
 # ---------- actions: drafts only, a human decides ----------
